@@ -42,12 +42,8 @@ story = driver.find_element(By.XPATH, './/*[@id="add-new"]/ul/span[1]/li')
 story.click()
 
 sleep(1)
-
 driver.switch_to.window(driver.window_handles[1])
 
-# html_source_code = driver.execute_script("return document.body.innerHTML;")
-# print(html_source_code)
-# driver.close()
 # go to the add story page and add title
 title = driver.find_element(
     By.XPATH,
@@ -80,10 +76,6 @@ driver.find_element(
 )
 
 sleep(20)
-
-# switch to the previous window
-# driver.switch_to.window(driver.window_handles[0])
-
 # click Submit button
 driver.find_element(
     By.XPATH,
